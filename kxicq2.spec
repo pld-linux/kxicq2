@@ -5,12 +5,12 @@ Version:	0.0.6
 Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/%{name}-%{version}.tar.gz
-Source1:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/GoldBlue.tar.gz
-Source2:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/blueplanet-0.1.tar.gz
-Source3:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/cyrustheme.tar.gz
-Source4:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/mauve.tar.gz
-Source5:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/ciasa_boark_inc-0.4.tar.gz
+Source0:	http://dl.sourceforge.net/kxicq/%{name}-%{version}.tar.gz
+Source1:	http://dl.sourceforge.net/kxicq/GoldBlue.tar.gz
+Source2:	http://dl.sourceforge.net/kxicq/blueplanet-0.1.tar.gz
+Source3:	http://dl.sourceforge.net/kxicq/cyrustheme.tar.gz
+Source4:	http://dl.sourceforge.net/kxicq/mauve.tar.gz
+Source5:	http://dl.sourceforge.net/kxicq/ciasa_boark_inc-0.4.tar.gz
 Patch0:		%{name}-glibc.patch
 URL:		http://www.kxicq.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
