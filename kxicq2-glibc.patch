@@ -1,0 +1,33 @@
+diff -Naur kxicq2-0.0.6.org/kxicq/engine/kxsend.cpp kxicq2-0.0.6/kxicq/engine/kxsend.cpp
+--- kxicq2-0.0.6.org/kxicq/engine/kxsend.cpp	Sun Nov 26 19:31:52 2000
++++ kxicq2-0.0.6/kxicq/engine/kxsend.cpp	Mon Mar 26 14:22:33 2001
+@@ -1,4 +1,4 @@
+-#include <sys/time.h>
++#include <time.h>
+ #include "kxsend.h"
+ #include <kxengine.h>
+ #include <kxudp.h>
+diff -Naur kxicq2-0.0.6.org/kxicq/engine/kxtcp.cpp kxicq2-0.0.6/kxicq/engine/kxtcp.cpp
+--- kxicq2-0.0.6.org/kxicq/engine/kxtcp.cpp	Sat Mar  3 19:27:29 2001
++++ kxicq2-0.0.6/kxicq/engine/kxtcp.cpp	Mon Mar 26 14:21:55 2001
+@@ -17,7 +17,7 @@
+ 
+ #include <qstring.h>
+ #include "kxtcp.h"
+-#include <sys/time.h>
++#include <time.h>
+ #include <unistd.h>
+ #include <sys/stat.h>
+ #include "kxengine.h"
+diff -Naur kxicq2-0.0.6.org/kxicq/engine/kxudp.cpp kxicq2-0.0.6/kxicq/engine/kxudp.cpp
+--- kxicq2-0.0.6.org/kxicq/engine/kxudp.cpp	Sat Mar  3 19:27:30 2001
++++ kxicq2-0.0.6/kxicq/engine/kxudp.cpp	Mon Mar 26 14:23:02 2001
+@@ -30,7 +30,7 @@
+ #include <string.h>
+ #include <iostream.h>
+ #include <qiodevice.h>
+-#include <sys/time.h>
++#include <time.h>
+ #include <qdatetime.h>
+ #include <kxmessage.h>
+ 
