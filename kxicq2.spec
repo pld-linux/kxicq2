@@ -6,7 +6,7 @@ Version:	0.7.8
 Release:	0.%{_cvs}
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	kxicq/%{name}-%{version}-%{_cvs}-kde3.tgz
+Source0:	%{name}-%{version}-%{_cvs}-kde3.tgz
 Source1:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/GoldBlue.tar.gz
 Source2:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/blueplanet-0.1.tar.gz
 Source3:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/cyrustheme.tar.gz
