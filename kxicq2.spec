@@ -19,7 +19,6 @@ BuildRequires:	kdelibs-devel >= 2.1
 Requires:	kdelibs >= 2.1
 Obsoletes:	kxicq
 
-%define         _prefix		/usr/X11R6
 %define		_htmldir	%{_datadir}/doc/kde/HTML
 
 %description
