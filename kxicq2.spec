@@ -39,9 +39,9 @@ prywatnych rozmów przez Internet.
 %package skins
 Summary:	Kxicq2 skins
 Summary(pl):	Skóry do Kxicq2
-Group:		X11/KDE/Applications
-Group(de):	X11/KDE/Applikationen
-Group(pl):	X11/KDE/Aplikacje
+Group:		X11/Applications/Networking
+Group(de):	X11/Applikationen/Netzwerkwesen
+Group(pl):	X11/Aplikacje/Sieciowe
 Requires:	kxicq2
 
 %description skins
