@@ -5,8 +5,6 @@ Version:	0.0.6
 Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
-Group(de):	X11/Applikationen/Netzwerkwesen
-Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/%{name}-%{version}.tar.gz
 Source1:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/GoldBlue.tar.gz
 Source2:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/blueplanet-0.1.tar.gz
@@ -40,8 +38,6 @@ prywatnych rozmów przez Internet.
 Summary:	Kxicq2 skins
 Summary(pl):	Skóry do Kxicq2
 Group:		X11/Applications/Networking
-Group(de):	X11/Applikationen/Netzwerkwesen
-Group(pl):	X11/Aplikacje/Sieciowe
 Requires:	kxicq2
 
 %description skins
