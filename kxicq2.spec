@@ -1,11 +1,12 @@
-Summary:	KXicq2 for KDE2 - An icq clone
-Summary(pl):	KXicq2 dla KDE2 - klon ICQ
+%define _cvs   	cvs
+Summary:	KXicq2 for KDE3 - An icq clone
+Summary(pl):	KXicq2 dla KDE3 - klon ICQ
 Name:		kxicq2
-Version:	0.0.6
-Release:	2
+Version:	0.7.8
+Release:	0.%{_cvs}
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/%{name}-%{version}-%{_cvs}-kde3.tgz
 Source1:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/GoldBlue.tar.gz
 Source2:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/blueplanet-0.1.tar.gz
 Source3:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/cyrustheme.tar.gz
@@ -14,9 +15,9 @@ Source5:	ftp://ftp.sourceforge.net/pub/sourceforge/kxicq/ciasa_boark_inc-0.4.tar
 Patch0:		%{name}-glibc.patch
 URL:		http://www.kxicq.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-BuildRequires:	qt-devel >= 2.2
-BuildRequires:	kdelibs-devel >= 2.1
-Requires:	kdelibs >= 2.1
+BuildRequires:	qt-devel >= 3.0.3
+BuildRequires:	kdelibs-devel >= 3.0
+Requires:	kdelibs >= 3.0
 Obsoletes:	kxicq
 
 %define         _prefix		/usr/X11R6
@@ -47,23 +48,25 @@ Kxicq2 skins.
 Skóry do Kxicq2.
 
 %prep
-%setup -q -a5
+%setup -q -a5 -n %{name}
 %patch -p1
 
 %build
 kde_htmldir="%{_htmldir}"; export kde_htmldir
 kde_icondir="%{_pixmapsdir}"; export kde_icondir
 
-%configure
+export QTDIR=/usr/X11R6/lib
+make -f Makefile.cvs
+%configure --with-qt-dir=%{_prefix}
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
+install -d $RPM_BUILD_ROOT%{_applnkdir}/Network/Communications
 mv -f $RPM_BUILD_ROOT%{_applnkdir}/Internet/kxicq2.desktop \
-    $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
+    $RPM_BUILD_ROOT%{_applnkdir}/Network/Communications
 
 install -d $RPM_BUILD_ROOT%{_datadir}/apps/kxicq2/skins
 tar zxvf %{SOURCE1} -C $RPM_BUILD_ROOT%{_datadir}/apps/kxicq2/skins
@@ -80,7 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/kxicq
-%{_applnkdir}/Network/Misc/kxicq2.desktop
+%{_applnkdir}/Network/Communications/kxicq2.desktop
 %{_datadir}/apps/kxicq2/pics
 
 %files skins

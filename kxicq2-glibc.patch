@@ -12,8 +12,8 @@ diff -Naur kxicq2-0.0.6.org/kxicq/engine/kxtcp.cpp kxicq2-0.0.6/kxicq/engine/kxt
 +++ kxicq2-0.0.6/kxicq/engine/kxtcp.cpp	Mon Mar 26 14:21:55 2001
 @@ -17,7 +17,7 @@
  
- #include <qstring.h>
  #include "kxtcp.h"
+ #include "kxaim.h"
 -#include <sys/time.h>
 +#include <time.h>
  #include <unistd.h>
