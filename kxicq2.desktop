@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=KXicq2
-Comment=KXicq2 is an ICQ clone for KDE2
-Comment[pl]=KXicq2 jest klonem ICQ pod KDE2
-Exec=/usr/X11R6/bin/kxicq
-Terminal=false
-Type=Application
