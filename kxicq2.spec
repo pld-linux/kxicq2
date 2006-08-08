@@ -53,7 +53,7 @@ Skóry do Kxicq2.
 
 %prep
 %setup -q -a5
-%patch -p1
+%patch0 -p1
 
 %build
 kde_htmldir="%{_htmldir}"; export kde_htmldir
