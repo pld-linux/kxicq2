@@ -1,5 +1,5 @@
 Summary:	KXicq2 for KDE2 - An icq clone
-Summary(pl):	KXicq2 dla KDE2 - klon ICQ
+Summary(pl.UTF-8):   KXicq2 dla KDE2 - klon ICQ
 Name:		kxicq2
 Version:	0.0.6
 Release:	2
@@ -33,23 +33,23 @@ is still in an early development stage, but it is already stable and
 usable. KXicq2 is a program which uses the icq-protocol, which is a
 very frequently used protocol for private chats on the Internet.
 
-%description -l pl
+%description -l pl.UTF-8
 To jest KXicq2 napisany przez Herwina Jana Steehouwera, nadal jest we
-wczesnym stadium rozwoju, ale jest stabilny i uøywalny. KXicq2 jest
-programem uøywaj±cym protoko≥u ICQ, bardzo czÍsto uøywanego do
-prywatnych rozmÛw przez Internet.
+wczesnym stadium rozwoju, ale jest stabilny i u≈ºywalny. KXicq2 jest
+programem u≈ºywajƒÖcym protoko≈Çu ICQ, bardzo czƒôsto u≈ºywanego do
+prywatnych rozm√≥w przez Internet.
 
 %package skins
 Summary:	Kxicq2 skins
-Summary(pl):	SkÛry do Kxicq2
+Summary(pl.UTF-8):   Sk√≥ry do Kxicq2
 Group:		X11/Applications/Networking
 Requires:	kxicq2
 
 %description skins
 Kxicq2 skins.
 
-%description skins -l pl
-SkÛry do Kxicq2.
+%description skins -l pl.UTF-8
+Sk√≥ry do Kxicq2.
 
 %prep
 %setup -q -a5
