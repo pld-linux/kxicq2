@@ -1,5 +1,5 @@
 Summary:	KXicq2 for KDE2 - An icq clone
-Summary(pl.UTF-8):   KXicq2 dla KDE2 - klon ICQ
+Summary(pl.UTF-8):	KXicq2 dla KDE2 - klon ICQ
 Name:		kxicq2
 Version:	0.0.6
 Release:	2
@@ -41,7 +41,7 @@ prywatnych rozmów przez Internet.
 
 %package skins
 Summary:	Kxicq2 skins
-Summary(pl.UTF-8):   Skóry do Kxicq2
+Summary(pl.UTF-8):	Skóry do Kxicq2
 Group:		X11/Applications/Networking
 Requires:	kxicq2
 
